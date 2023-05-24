@@ -1,0 +1,2381 @@
+:root {
+    --increaseSpeed: 3s;
+    --increaseSpeed2: 15s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    background: #ABABAB;
+    webkit-user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vw;
+    outline-color: #2f3f4f;
+}
+
+input[type="range"]:focus {
+    box-shadow: 0 0 3px 1px #2f3f4f;
+    outline: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: white;
+    border-top: #2f3f4f 0.125em solid;
+    border-bottom: #2f3f4f 0.125em solid;
+    border-left: white 0.125em solid;
+    border-right: white 0.125em solid;
+}
+
+input[type='radio']:focus {
+    background-color: #2f3f4f;
+    animation: Record var(--increaseSpeed) infinite linear;
+}
+
+.bac {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    background: black;
+    padding: 3vw;
+    margin: 2vw;
+    border-radius: 2vw;
+    left: 2.5vw;
+    top: 90vw;
+    font-family: Georgia;
+    font-style: oblique;
+    text-align: center;
+    opacity: 0.75;
+    min-height: 5vw;
+
+    animation: sizeIcred var(--increaseSpeed2) infinite ease-out;
+}
+
+button,input {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hed_bar {
+    width: 100%;
+    height: 10%;
+    background: #2F3F4F;
+    display: flex;
+}
+
+.container_back {
+    width: 100%;
+    height: 90%;
+    background: #ABABAB;
+    z-index: -5;
+    clear: both;
+}
+
+.logo2 {
+    flex-grow: 1.0;
+    width: 60%;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 5vw;
+}
+
+.logo {
+    display: flex;
+    padding: 3vw;
+    font-size: 7vw;
+    width: 60%;
+    flex-flow: 1.0;
+    color: white;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.logy2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    text-align: center;
+    font-size: 5vw;
+    background: #282828;
+    padding: 1vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    opacity: 0.75;
+}
+
+.fom {
+    position: absolute;
+    background: none;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    margin: 3vw;
+    padding: 3vw;
+    width: 90%;
+    top: 35vw;
+}
+
+.fom2 {
+    position: absolute;
+    background: none;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    margin: 2vw;
+    padding: 3vw;
+    width: 90%;
+    top: 25vw;
+}
+
+.row {
+    display: flex;
+    height: 20vw;
+}
+
+.In, .upy {
+    flex-grow: 1.0;
+    color: white;
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    font-size: 3vw;
+    background: #2f3f4f;
+    height: 10vw;
+    border: #ccc 0.125em solid;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 75%;
+}
+.Up, .ini {
+    flex-grow: 1.0;
+    color: white;
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    font-size: 3vw;
+    background: #282828;
+    height: 10vw;
+    border: #282828 0.125em solid;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 25%;
+}
+
+.other {
+    display: none;
+    width: 40%;
+    flex-grow: 1.0;
+}
+
+.othery {
+    width: 40%;
+}
+
+.edy, .chary, .usey {
+    flex-grow: 1.0;
+    color: white;
+    font-size: 5vw;
+}
+
+.exity {
+    border-radius: 2vw;
+    height: 25px;
+    width: 25px;
+    background: black;
+    color: white;
+    border: #ccc 0.025em solid;
+    position: absolute;
+    top: 4vw;
+    left: 90vw;
+}
+
+.cont {
+    position: absolute;
+    top: 17vw;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 88%;
+    background: none;
+}
+
+.chats {
+    margin: 2vw;
+    border-radius: 3vw;
+    height: 35%;
+    background: #282828;
+    opacity: 0.75;
+    padding: 3vw;
+}
+
+.chat_hed {
+    font-family: Georgia;
+    font-style: oblique;
+    padding: 2.5vw;
+    border: #ABABAB 0.125em solid;
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    border-radius: 3vw;
+    background: #2f3f4f;
+}
+
+.chat_add, .chat_add2 {
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 3vw;
+    color: white;
+    background: #282828;
+    border: #ccc 0.025em solid;
+}
+
+.chat_pad {
+    float: right;
+    clear: right;
+    padding: 1vw;
+    border-radius: 3vw;
+    background-color: black;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, black 1em), repeating-linear-gradient(#282828, #282828);
+    border: #ccc 0.025em solid;
+    margin-bottom: 0.5vw;
+}
+
+.chat_pad::-webkit-scrollbar, .chat_disp::-webkit-scrollbar, .bis_dispy::-webkit-scrollbar, .bis_disp::-webkit-scrollbar, .bisy_hall::-webkit-scrollbar, .prod_disp::-webkit-scrollbar, .bid_pad::-webkit-scrollbar, .msg_bod::-webkit-scrollbar, .chat_ody::-webkit-scrollbar, .bis_nam_tag::-webkit-scrollbar, .ads_bod::-webkit-scrollbar {
+    display: none;
+}
+
+.business {
+    margin: 2vw;
+    border-radius: 3vw;
+    height: 50%;
+    background: #282828;
+    opacity: 0.75;
+    padding: 3vw;
+}
+
+.buss_pad {
+    font-family: Georgia;
+    font-style: oblique;
+    padding: 1vw;
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
+    display: flex;
+}
+
+.biss, .income, .expend {
+    flex-grow: 1.0;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.biss {
+    border-bottom: #ccc 0.25em solid;
+}
+
+#pose {
+    position: absolute;
+    font-size: 5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    background: black;
+    opacity: 0.2;
+    padding: 3vw;
+    border-radius: 3vw;
+    height: 7vw;
+    width: 30vw;
+    margin: 2vw;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(30deg);
+}
+
+.sign1 {
+    top: 50vw;
+    left: 50vw;
+}
+
+.sign2 {
+    top: 50vw;
+    left: 5vw;
+}
+
+.sign3 {
+    top: 80vw;
+    left: 5vw;
+}
+
+.sign4 {
+    top: 80vw;
+    left: 50vw;
+}
+
+.sign5 {
+    left: 50vw;
+    top: 110vw;
+}
+
+.sign6 {
+    left: 5vw;
+    top: 110vw;
+}
+
+.sign7 {
+    top: 140vw;
+    left: 5vw;
+}
+
+.sign8 {
+    top: 140vw;
+    left: 50vw;
+}
+
+.sign9 {
+    top: 20vw;
+    left: 5vw;
+}
+
+.sign10 {
+    top: 20vw;
+    left: 50vw;
+}
+
+#username, #Password, #password, #phone, #user_name, #full_name {
+    height: 15vw;
+    width: 100%;
+    background: none;
+    border-bottom: white 0.025em solid;
+    font-size: 4vw;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.nami {
+    font-size: 3.5vw;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    float: right;
+    width: 75%;
+    height: 100%;
+    padding-top: 2.5vw;
+}
+
+.usi {
+    font-size: 2vw;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.sech2 {
+    float: right;
+    width: 80%;
+    display: none;
+}
+
+.paste2 {
+    background: #282828;
+    border-radius: 3vw;
+    padding: 3vw;
+}
+
+.friend {
+    display: flex;
+    background: black;
+    padding: 0.2vw;
+    border-radius: 3vw;
+    opacity: 0.85;
+    margin: 0.5vw;
+    width: 97%;
+}
+
+.friendy {
+    display: flex;
+    background: black;
+    padding: 0.2vw;
+    height: 14vw;
+    width: 97%;
+    border-radius: 3vw;
+    opacity: 0.85;
+    margin: 0.5vw;
+}
+
+.owny {
+    font-size: 2.5vw;
+    opacity: 0.75;
+}
+
+.namy, .icod, .poll, .poll2, .poll3 {
+    flex-grow: 1.0;
+    font-size: 4vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    padding-top: 1vw;
+    padding-left: 0.5vw;
+}
+
+.namy2 {
+    flex-grow: 1.0;
+    font-size: 4vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    padding-top: 2vw;
+}
+
+.namy, .namee, .namy2 {
+    width: 60%;
+    color: white;
+}
+
+.namee {
+    flex-grow: 1.0;
+    font-size: 4vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    padding-top: 1vw;
+    padding-left: 1vw;
+}
+
+.icod, .poll, .icodi, .poll2, .poll3 {
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+.poll, .poll2, .poll3 {
+    padding-top: 4vw;
+}
+
+.imig {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 5vw;
+    color: white;
+    background: #ABABAB;
+}
+
+.recent, .line {
+    width: 100%;
+    height: 5vw;
+    color: white;
+    opacity: 0.5;
+    overflow: hidden;
+    font-size: 2.5vw;
+    padding-top: 2vw;
+}
+
+.tie {
+    font-size: 5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    text-align: center;
+    opacity: 0.75;
+    color: white;
+    width: 100%;
+    padding-bottom: 3vw;
+}
+
+#serch {
+    height: 8vw;
+    width: 100%;
+    flex-grow: 1.0;
+    background: #282828;
+    outline-color: #4C4C67;
+    outline-offset: 2vw;
+    font-size: 4vw;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    border-bottom-left-radius: 2vw;
+    border-top-left-radius: 2vw;
+    border-bottom: black 0.025em solid;
+}
+
+.serched {
+    flex-grow: 1.0;
+    width: 20%;
+    height: 8vw;
+    background: #2f3f4f;
+    border-bottom-right-radius: 2vw;
+    border-top-right-radius: 2vw;
+    font-size: 4vw;
+}
+
+.mody {
+    font-size: 3.4vw;
+    color: red;
+    font-family: Georgia;
+    font-style: oblique;
+    background: none;
+}
+
+.chat_disp {
+    height: 75%;
+    width: 100%;
+    overflow: auto;
+    flex: 1 1 0;
+    display: block;
+}
+
+.chat_open {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 200;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+    color: white;
+    background: none;
+}
+
+.open_hed {
+    font-size: 4vw;
+    color: white;
+    border-bottom: white 0.125em solid;
+    padding: 3vw;
+    background: #2f3f4f;
+    height: 5%;
+}
+
+.cha_edd {
+    display: flex;
+    font-size: 4.5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    margin-bottom: 0.5vw;
+    border-bottom: white 0.125em solid;
+    padding: 0.5vw;
+    background: #2f3f4f;
+    height: 7%;
+}
+
+.open_bod {
+    font-size: 4vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    height: 91%;
+    width: 98%;
+    overflow: auto;
+    flex: 1 1 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    background: #ABABAB;
+    opacity: 0.85;
+}
+
+.open_conv {
+    font-size: 4vw;
+    color: white;
+    min-height: 6%;
+    position: relative;
+    bottom: 0;
+    width: 97%;
+    clear: both;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 0;
+    display: flex;
+}
+
+.open_disp {
+    background-color: #2f3f4f;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #4C4C67 1em), repeating-linear-gradient(#ABABAB, #ABABAB);
+    width: 100%;
+    height: 91.5%;
+}
+
+.msg_bod {
+    height: 88.5%;
+    position: relative;
+    width: 98%;
+    clear: both;
+    padding: 1vw;
+    font-size: 2.5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    overflow: auto;
+    flex: 1 1 0;
+}
+
+.closy, .closy2, .closy3 {
+    width: 25px;
+    height: 25px;
+    border-radius: 2vw;
+    background: #282828;
+    color: white;
+    font-size: 4vw;
+    clear: right;
+}
+
+.edy_clusy {
+    width: 25px;
+    height: 25px;
+    border-radius: 2vw;
+    margin-top: 0.5vw;
+    color: white;
+    font-size: 4vw;
+}
+
+.edy_clus {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #2f3f4f;
+    color: white;
+    font-size: 4vw;
+}
+
+.bis_ext, .bis_exty {
+    width: 25px;
+    height: 25px;
+    border-radius: 2vw;
+    background: black;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.msg_item {
+    display: flex;
+}
+
+.msg_item, .send_pad, .imoji, .msg, .msgy {
+    flex-grow: 1.0;
+}
+
+.msg_item {
+    margin: 1vw;
+    min-height: 10vw;
+    width: 80%;
+}
+
+.msg, .msgy {
+    width: 80%;
+    min-height: 10vw;
+    outline: none;
+    color: white;
+    font-size: 4vw;
+    padding: 0.5vw;
+    background: #282828;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+.imoji {
+    width: 15%;
+    height: 12vw;
+    color: black;
+    background: #2f3f4f;
+    font-size: 6vw;
+    border-bottom-left-radius: 5vw;
+    border-top-left-radius: 5vw;
+}
+
+.send_pad {
+    width: 20%;
+}
+
+.msg_send, .vn_rec {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    text-align: center;
+    font-size: 5vw;
+    background: #2f3f4f;
+    color: white;
+}
+
+.msg_send {
+    font-size: 5vw;
+    transform: rotateZ(50deg);
+}
+
+.bis_reg {
+    padding: 3vw;
+    border-radius: 3vw;
+}
+
+.bis_img {
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: none;
+    text-align: center;
+    border: grey 0.025em dashed;
+    color: grey;
+    font-size: 10vw;
+}
+
+.padi {
+    display: flex;
+    margin: 3vw;
+}
+
+#biss_nam {
+    width: 98%;
+    height: 10vw;
+    border-radius: 3vw;
+    color: white;
+    background: #282828;
+    font-family: Georgia;
+    font-style: oblique;
+    border: none;
+    outline: none;
+    font-size: 3.5vw;
+}
+
+.abut {
+    padding: 1vw;
+    font-size: 3vw;
+    padding-top: 1vw;
+    border-radius: 3vw;
+    color: white;
+    background: #282828;
+    font-family: Georgia;
+    font-style: oblique;
+    border: none;
+    outline: none;
+    min-height: 10vw;
+    width: 97%;
+}
+
+.bis1 {
+    position: absolute;
+    font-size: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #2f3f4f;
+    text-align: center;
+    color: white;
+}
+
+.bis2 {
+    position: absolute;
+    font-size: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: white;
+    text-align: center;
+    color: black;
+
+    animation: bis2 var(--increaseSpeed2) infinite ease-out;
+}
+
+.bis3 {
+    position: absolute;
+    font-size: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #ABABAB;
+    text-align: center;
+    color: #4C4C67;
+
+    animation: bis3 var(--increaseSpeed2) infinite ease-out;
+}
+
+.bis4 {
+    position: absolute;
+    font-size: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #282828;
+    text-align: center;
+    color: white;
+
+    animation: bis4 var(--increaseSpeed2) infinite ease-out;
+}
+
+.bis5 {
+    position: absolute;
+    font-size: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: black;
+    text-align: center;
+    color: white;
+
+    animation: bis5 var(--increaseSpeed2) infinite ease-out;
+}
+
+.bis6 {
+    position: absolute;
+    font-size: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #2f3f4f;
+    text-align: center;
+    color: white;
+
+    animation: bis6 var(--increaseSpeed2) infinite ease-out;
+}
+
+.bis_hal, .bis_ref {
+    flex-grow: 1.0;
+    font-family: Georgia;
+    font-style: oblique;
+    height: 10vw;
+}
+
+.bis_hal {
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    background: white;
+    color: black;
+    font-size: 3vw;
+}
+
+.bis_ref {
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    background: #2f3f4f;
+    color: white;
+    font-size: 3vw;
+}
+
+#biss_own, #mail, #referer, .biss_don {
+    padding: 2vw;
+    border-radius: 3vw;
+    height: 10vw;
+    flex-grow: 1.0;
+    background: #282828;
+    color: white;
+    margin: 1vw;
+    width: 50%;
+    font-size: 3.5vw;
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}
+
+.ui-dialog {
+    background: #2f3f4f;
+    z-index: 500;
+    padding: 0;
+    border-radius: 3vw;
+}
+
+.closey {
+    background: #4C4C67;
+    color: #4C4C67;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.outputy {
+    width: 100%;
+    height: 100%;
+    border-radius: 3vw;
+    text-align: center;
+    padding-left: 4vw;
+}
+
+.output {
+    object-fit: cover;
+    width: 35%;
+    height: 35%;
+    border-radius: 3vw;
+}
+
+.model {
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
+    font-size: 4.5vw;
+    font-style: oblique;
+    font-family: Georgia;
+    color: black;
+    text-align: center;
+}
+
+.data {
+    height: 92%;
+    width: 100%;
+    color: black;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 4vw;
+}
+
+.demis {
+    width: 100%;
+    height: 8%;
+    color: black;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 4vw;
+    border-top: black 0.025em solid;
+}
+
+@keyframes sizeIcred {
+    0%, 8%, 100% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes bis2 {
+    10%, 20% {
+        left: 5vw;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        left: 10vw;
+        animation-timing-function: ease-in;
+    }
+    40%, 60% {
+        left: 12vw;
+        animation-timing-function: ease-in;
+    }
+    60%, 80% {
+        left: 16vw;
+        animation-timing-function: ease-in;
+    }
+    80%, 100% {
+        left: 20.5vw;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes bis3 {
+    10%, 20% {
+        left: 5vw;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        left: 15vw;
+        animation-timing-function: ease-in;
+    }
+    40%, 60% {
+        left: 25vw;
+        animation-timing-function: ease-in;
+    }
+    60%, 80% {
+        left: 30vw;
+        animation-timing-function: ease-in;
+    }
+    80%, 100% {
+        left: 35vw;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes bis4 {
+    10%, 20% {
+        left: 5vw;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        left: 15vw;
+        animation-timing-function: ease-in;
+    }
+    40%, 60% {
+        left: 40vw;
+        animation-timing-function: ease-in;
+    }
+    60%, 80% {
+        left: 45vw;
+        animation-timing-function: ease-in;
+    }
+    80%, 100% {
+        left: 50vw;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes bis5 {
+    10%, 20% {
+        left: 5vw;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        left: 15vw;
+        animation-timing-function: ease-in;
+    }
+    40%, 60% {
+        left: 55vw;
+        animation-timing-function: ease-in;
+    }
+    60%, 80% {
+        left: 60vw;
+        animation-timing-function: ease-in;
+    }
+    80%, 100% {
+        left: 65vw;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes bis6 {
+    10%, 20% {
+        left: 5vw;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        left: 25vw;
+        animation-timing-function: ease-in;
+    }
+    40%, 60% {
+        left: 65vw;
+        animation-timing-function: ease-in;
+    }
+    60%, 80% {
+        left: 75vw;
+        animation-timing-function: ease-in;
+    }
+    80%, 100% {
+        left: 80vw;
+        animation-timing-function: ease-in;
+    }
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-ph);
+    opacity: 0.4;
+    font-size: 4vw;
+}
+
+.bis_profile {
+    background-color: #4C4C67;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ABABAB 1em), repeating-linear-gradient(#4C4C67, #ABABAB);
+
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    top: 7vw;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+.prof_img {
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bis_nam {
+    width: 100%;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: black;
+}
+
+.bis_own {
+    width: 100%;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0.5;
+    color: black;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.abuti {
+    width: 100%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+    opacity: 0.5;
+    color: black;
+    font-family: Georgia;
+    font-style: oblique;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 1vw;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.mail {
+    font-size: 2vw;
+    background: #2f3f4f;
+    color: white;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 59%;
+    padding: 2vw;
+}
+
+.add {
+    padding: 2vw;
+    width: 20%;
+    font-size: 2.3vw;
+    border-radius: 2vw;
+    background: #4C4C67;
+    color: white;
+}
+
+.prod_disp {
+    display: flex;
+    overflow: auto;
+    min-height: 10vw;
+    padding: 0.5vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: #282828 0.025em solid;
+    border-bottom: #282828 0.025em solid;
+    align-items: center;
+}
+
+.so_med {
+    height: 15vw;
+    width: 100%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 1vw;
+}
+
+.bis_disp {
+    height: 80%;
+    min-width: 35%;
+    max-width: 100%;
+    display: none;
+    overflow: auto;
+}
+
+.pre_disp {
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
+}
+
+.add_disp {
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    height: 10vw;
+    text-align: center;
+    color: white;
+    background: #2f3f4f;
+    padding: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    flex-grow: 1.0;
+    font-size: 3vw;
+
+    animation: colorFlop var(--increaseSpeed2) infinite ease-out;
+}
+
+.add_disp2 {
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    height: 10vw;
+    text-align: center;
+    color: black;
+    background: white;
+    padding: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    flex-grow: 1.0;
+    font-size: 3vw;
+
+    animation: colorFlop2 var(--increaseSpeed2) infinite ease-out;
+}
+
+@keyframes colorFlop {
+    0%, 10% {
+        background: black;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        background: white;
+        color: black;
+        animation-timing-function: ease-in;
+    }
+    40%, 50% {
+        background: #2f3f4f;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    60%, 70% {
+        background: #ABABAB;
+        color: black;
+        animation-timing-function: ease-in;
+    }
+    80%, 90% {
+        background: #282828;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        background: #2f3f4f;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes colorFlop2 {
+    0%, 10% {
+        background: #2f3f4f;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    20%, 30% {
+        background: #2f3f4f;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    40%, 50% {
+        background: black;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    60%, 70% {
+        background: #282828;
+        color: white;
+        animation-timing-function: ease-in;
+    }
+    80%, 90% {
+        background: #ABABAB;
+        color: Black;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        background: white;
+        color: black;
+        animation-timing-function: ease-in;
+    }
+}
+
+.pre_due {
+    width: 40%;
+    padding: 1vw;
+}
+
+.pre_mod {
+    display: flex;
+    width: 100%;
+}
+
+.bis_nam_tag {
+    flex-grow: 1.0;
+    text-align: center;
+    padding: 2vw;
+    border-bottom-left-radius: 2vw;
+    background: #2f3f4f;
+    font-size: 3vw;
+    color: white;
+    overflow: auto;
+}
+
+.predi {
+    text-align: center;
+    height: 3.5vw;
+    width: 15vw;
+}
+
+.prod_dis {
+    flex-grow: 1.0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.biss_disp {
+    width: 100%;
+}
+
+.bis_dispy {
+    width: 100%;
+    height: 93%;
+    overflow: auto;
+    background: #282828;
+    clear: both;
+}
+
+.add_pan {
+    flex-grow: 1.0;
+    border-bottom-right-radius: 2vw;
+    background: black;
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.prod_add {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background: #282828;
+    font-size: 2.5vw;
+    color: white;
+    border: #ccc 0.025em solid;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.columny {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.prod_img {
+    margin-top: 8px;
+    width: 23%;
+    height: auto;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.bisy_hall {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #ABABAB;
+    color: #ABABAB;
+    z-index: -5;
+}
+
+.hallway {
+    overflow: auto;
+    height: 92.5%;
+}
+
+.bisy_chat {
+    width: 100%;
+    height: 100%;
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+}
+
+.bisy_chat_ed {
+    height: 8%;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.b_edd {
+    display: flex;
+    font-size: 4.5vw;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+    margin-bottom: 0.5vw;
+    border-bottom: white 0.125em solid;
+    background: #2f3f4f;
+}
+
+.bisy_chat_od {
+    width: 100%;
+    height: 91.5%;
+
+    background-color: #2f3f4f;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #4C4C67 1em), repeating-linear-gradient(#ABABAB, #ABABAB);
+}
+
+.bisy_chat_ot {
+    width: 100%;
+    min-height: 6%;
+    bottom: 0;
+    display: flex;
+}
+
+.chat_ody {
+    height: 89%;
+    width: 98%;
+    padding: 1vw;
+    overflow: auto;
+    flex: 1 1 0;
+}
+
+.b_ext, .b_img, .b_nam {
+    flex-grow: 1.0;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.b_nam {
+    width: 75%;
+    font-size: 4vw;
+    margin-left: 2.5vw;
+    padding-top: 2vw;
+}
+
+.b_img {
+    width: 12%;
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.b_ext {
+    text-align: center;
+}
+
+.bimg {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    object-fit: cover;
+}
+
+.b_own {
+    opacity: 0.5;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 2.5vw;
+}
+
+.attach_disp {
+    border-radius: 3vw;
+    background: white;
+    height: 10vw;
+    width: 10vw;
+    margin-right: 4vw;
+}
+
+.init_disp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.message {
+    font-family: Georgia;
+    font-style: oblique;
+    margin: 0.5em;
+    font-size: 3.5vw;
+    position: relative;
+    display: table;
+    width: 95%;
+}
+
+.bis_msgi_mine {
+    border-radius: 3vw;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 1px 5px;
+    min-width: 5%;
+    max-width: 70%;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    float: left;
+    color: black;
+    margin: 1vw;
+}
+
+.frd_msg_mine {
+    border-radius: 3vw;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 5px 8px;
+    min-width: 5%;
+    max-width: 70%;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    float: left;
+    color: black;
+    margin: 1vw;
+}
+
+.bis_msgi_mine::before, .frd_msg_mine::before {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    left: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ccc;
+}
+
+.bis_msgi_mine::after, .frd_msg_mine::after {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    left: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid white;
+    clear: both;
+}
+
+.bis_msgi_yours {
+    border-radius: 3vw;
+    border: 1px solid #ccc;
+    min-width: 5%;
+    max-width: 70%;
+    display: inline-block;
+    padding: 1px 5px;
+    background: #2f3f4f;
+    position: relative;
+    z-index: 100;
+    color: white;
+    float: right;
+    clear: right;
+    margin: 1vw;
+}
+
+.frd_msg_yours {
+    border-radius: 3vw;
+    border: 1px solid #ccc;
+    min-width: 5%;
+    max-width: 70%;
+    display: inline-block;
+    padding: 5px 8px;
+    background: #2f3f4f;
+    position: relative;
+    z-index: 100;
+    color: white;
+    float: right;
+    clear: right;
+    margin: 1vw;
+}
+
+.bis_msgi_yours::before, .frd_msg_yours::before {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    right: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ccc;
+}
+
+.bis_msgi_yours::after, .frd_msg_yours::after {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    right: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid #2f3f4f;
+    clear: both;
+    color: white;
+}
+
+.bis_img_cont {
+    max-width: 70vw;
+    height: 60vw;
+    min-width: 60vw;
+}
+
+.bis_msg_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.bis_msg_cont {
+    padding: 1.5vw;
+    display: inline-block;
+}
+
+.intro_hed {
+    position: relative;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.intro {
+    position: relative;
+    font-family: Georgia;
+    font-style: oblique;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.intro_pad {
+    border-radius: 3vw;
+    padding: 2vw;
+    font-size: 2.2vw;
+    text-align: center;
+    background: black;
+    color: white;
+    opacity: 0.85;
+}
+
+.introd {
+    border-radius: 3vw;
+    padding: 2vw;
+    font-size: 2.1012vw;
+    text-align: center;
+    background: black;
+    color: white;
+    opacity: 0.85;
+}
+
+.bid_pad, .ads_disp {
+    height: 80%;
+    width: 100%;
+    display: none;
+    overflow: auto;
+    flex: 1 1 0;
+}
+
+.aud_play, .aud_pus {
+    width: 35px;
+    height: 35px;
+    font-size: 5vw;
+    border-radius: 35px;
+    color: white;
+    text-align: center;
+    padding: 0.5vw;
+    background-color: black;
+    opacity: 0.75;
+    flex-grow: 1.0;
+}
+
+.aud_pad {
+    width: 100%;
+    min-height: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    flex-flow: 1.0;
+    text-align: center;
+}
+
+.play_pac {
+    width: 5%;
+    height: 8vw;
+    flex-grow: 1.0;
+    float: left;
+}
+
+.play_pac2 {
+    width: 42%;
+    height: 8vw;
+    flex-grow: 1.0;
+    float: left;
+}
+
+.timeline {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7vw;
+    border-radius: 3vw;
+    background-color: #e5e5e5;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#000, #111);
+    background-repeat: no-repeat;
+}
+
+.timeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 2px #555;
+    background-color: #282828;
+}
+
+.timeline::-webkit-slider-thumb:hover {
+    background-color: black;
+    outline-color: white;
+    outline-offset: 2vw;
+}
+
+.timeline:hover::-webkit-slider-thumb {
+    opacity: 1;
+    transform: all .3s ease-in-out;
+}
+
+
+.timeline::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.bisi {
+    border-bottom: white 0.15em solid;
+}
+
+.msg_num, .bis_num {
+    min-width: 5vw;
+    height: 5vw;
+    border-radius: 1vw;
+    background: none;
+    color: white;
+    float: right;
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 0;
+}
+
+.bis_dot {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 60%;
+    background: none;
+    padding: 0;
+}
+
+.cha_dot {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 60%;
+    background: none;
+    padding: 0;
+}
+
+.edit1, .sett {
+    border-radius: 3vw;
+    border: #ccc 0.125em solid;
+    background: #282828;
+    padding: 0.2vw;
+}
+
+.Qview, .Bview {
+    height: 75vw;
+    overflow: auto;
+    position: relative;
+}
+
+.Qmsg, .Bmsg {
+    height: 15vw;
+}
+
+.title_bar {
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 4vw;
+    width: 70%;
+    color: white;
+    flex-grow: 1.0;
+    font-family: Georgia;
+    font-style: oblique;
+    text-align: center;
+}
+
+.title_bar2 {
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 4vw;
+    width: 70%;
+    color: white;
+    flex-grow: 1.0;
+    font-family: Georgia;
+    font-style: oblique;
+    text-align: center;
+}
+
+.title, .title2 {
+    margin: 0.5vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    background: #282828;
+}
+
+.title3 {
+    margin: 0;
+    padding: 2vw;
+    background: #2f3f4f;
+    height: 4%;
+    color: white;
+    font-size: 4vw;
+    border-bottom: white 0.125em solid;
+}
+
+.now_share {
+    background: #2F3F4F;
+    border-radius: 2vw;
+    padding: 3vw;
+    font-size: 4.5vw;
+    color: white;
+    width: 99%;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.clear_chat, .block, .delete {
+    padding: 2vw;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 3vw;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    background: #282828;
+}
+
+.ads_disp {
+    padding-top: 3vw;
+}
+
+.ads_create, .link_create, .manager {
+    padding: 3vw;
+    border-radius: 3vw;
+    background-color: black;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, black 1em), repeating-linear-gradient(#282828, #282828);
+
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 4vw;
+    border: #ccc 0.025em solid;
+}
+
+.ads_for {
+    display: inline-block;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 3vw;
+    background: black;
+    border-radius: 1vw;
+    color: white;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    min-width: 26%;
+    max-width: 40%;
+}
+
+.for_disp {
+    overflow: auto;
+    height: 63%;
+}
+
+.ads_img_cont {
+    height: 70%;
+    padding-top: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 0;
+    margin: 0;
+    border: none;
+    border-top-right-radius: 3vw;
+    border-top-left-radius: 3vw;
+}
+
+.ads_nam_cont {
+    height: 30%;
+    padding: 2vw;
+    margin: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+
+    border-bottom-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    font-size: 3.2vw;
+}
+
+.ads_img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+}
+
+.ads_desc {
+    min-height: 7vw;
+    font-size: 4vw;
+    border: #ccc 0.025em solid;
+    border-radius: 1vw;
+    color: white;
+    padding-top: 1vw;
+    margin: 1vw;
+}
+
+.desc_info {
+    font-size: 2.5vw;
+    background: none;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    padding: 1vw;
+    display: inline-block;
+}
+
+.ads_btn {
+    display: flex;
+    padding: 0.5vw;
+}
+
+.ads_don {
+    padding: 2vw;
+    border-radius: 3vw;
+    height: 10vw;
+    flex-grow: 1.0;
+    background: #ABABAB;
+    color: Black;
+    margin: 1vw;
+    width: 50%;
+    font-size: 3.5vw;
+}
+
+.ads_can {
+    padding: 2vw;
+    border-radius: 3vw;
+    height: 10vw;
+    flex-grow: 1.0;
+    background: #ABABAB;
+    color: Black;
+    margin: 1vw;
+    width: 50%;
+    font-size: 3.5vw;
+}
+
+.ads {
+    width: 60vw;
+    min-height: 60vw;
+    max-height: 120vw;
+    padding: 2vw;
+    border-top-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    background: #282828;
+    border: white 0.025em inset;
+    margin: 0.5vw;
+}
+
+.ads_com {
+    min-height: 10%;
+    max-height: 40%;
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 2.5vw;
+    padding: 2vw;
+}
+
+.ads_comfy {
+    padding: 3vw;
+    border-radius: 3vw;
+    font-size: 2vw;
+    background: #ABABAB;
+    width: 98%;
+    margin: 0.5vw;
+    color: black;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.ads_hed {
+    width: 96%;
+    height: 5%;
+    background: #2F3F4F;
+    padding: 2vw;
+    color: white;
+    font-size: 4vw;
+    border-bottom: white 0.12em solid;
+}
+
+.ads_bod {
+    position: absolute;
+    top: 17vw;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 89%;
+    background: none;
+    padding-left: 17vw;
+    overflow: auto;
+}
+
+.ads_del, .ads_share {
+    flex-flow: 1.0;
+    width: 40%;
+    margin: 3vw;
+    font-size: 3vw;
+    font-family: Georgia;
+    font-style: oblique;
+    border: #ABABAB 0.025em solid;
+    border-radius: 2vw;
+    padding: 3vw;
+}
+
+#bis_scroll, #bis_scroll2, #frd_scroll, #frd_scroll2 {
+    height: 1vw;
+}
+
+.ads_clip {
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 2.4vw;
+    float: right;
+    background: black;
+    width: 87%;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+
+.link_clip, .manager_clip {
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 2.5vw;
+    float: right;
+    background: black;
+    width: 88%;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+
+#frd_vn_stop, #bis_vn_stop {
+    animation: Record var(--increaseSpeed) infinite linear;
+}
+
+@keyframes Record {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .logy, .logy2, .imig {
+        width: 110px;
+        height: 110px;
+        border-radius: 110px;
+        font-size: 5vw;
+    }
+    .exity, .closy, .closy2, .closy3, .bis_ext, .bis_exty {
+        border-radius: 2vw;
+        height: 60px;
+        width: 60px;
+        background: #282828;
+        color: white;
+        font-size: 4.5vw;
+        clear: right;
+    }
+    .chat_add, .chat_add2 {
+        border-radius: 95px;
+        width: 95px;
+        height: 95px;
+        font-size: 3.5vw;
+        color: white;
+        border: #ccc 0.035em solid;
+    }
+    #bis {
+        position: absolute;
+        font-size: 1.8vw;
+        font-family: Georgia;
+        font-style: oblique;
+        width: 170px;
+        height: 170px;
+        border-radius: 170px;
+        text-align: center;
+    }
+    .biss, .income, .expend {
+        height: 7vw;
+        font-size: 3vw;
+    }
+    .paco {
+        position: absolute;
+        bottom: 15vw;
+        width: 90%;
+    }
+    .add_disp, .add_disp2 {
+        font-size: 3vw;
+    }
+    .bis_nam_tag {
+        position: absolute;
+        bottom: 125;
+    }
+    .bisi {
+        font-size: 8vw;
+    }
+    .prof_img {
+        width: 550px;
+        height: 550px;
+        border-radius: 550px;
+        object-fit: cover;
+    }
+    .msg_send, .vn_rec {
+        width: 125px;
+        height: 125px;
+        border-radius: 125px;
+        font-size: 5vw;
+    }
+    .chat_ext {
+        font-size: 4vw;
+    }
+    .bimg {
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        object-fit: cover;
+    }
+    .b_ext {
+        font-size: 4vw;
+    }
+    .timeline {
+        -webkit-appearance: none;
+        height: 7vw;
+        width: 40vw;
+        border-radius: 4vw;
+    }
+    .aud_play, .aud_pus {
+        width: 90px;
+        height: 90px;
+        font-size: 6vw;
+        border-radius: 90px;
+        color: white;
+        text-align: center;
+        padding: 0.5vw;
+        background-color: black;
+        opacity: 0.75;
+        flex-grow: 1.0;
+    }
+    .frd_msg_mine {
+        border-radius: 3vw;
+        border: 1px solid #ccc;
+        background: white;
+        padding: 11px 12px;
+        min-width: 5%;
+        max-width: 70%;
+        display: inline-block;
+        position: relative;
+        z-index: 100;
+        float: left;
+        color: black;
+        margin: 1vw;
+    }
+    .frd_msg_mine::before {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 0px;
+        left: -10px;
+        border: 15px solid transparent;
+        border-top: 18px solid #ccc;
+    }
+    .frd_msg_mine::after {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 1px;
+        left: -9px;
+        border: 15px solid transparent;
+        border-top: 18px solid white;
+        clear: both;
+    }
+    .frd_msg_yours {
+        border-radius: 3vw;
+        border: 1px solid #ccc;
+        min-width: 5%;
+        max-width: 60%;
+        display: inline-block;
+        padding: 11px 12px;
+        background: #2f3f4f;
+        position: relative;
+        z-index: 100;
+        clear: right;
+        color: white;
+        float: right;
+        clear: right;
+        margin: 1vw;
+    }
+    .frd_msg_yours::before {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 0px;
+        right: -10px;
+        border: 15px solid transparent;
+        border-top: 18px solid #ccc;
+    }
+    .frd_msg_yours::after {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 1px;
+        right: -9px;
+        border: 15px solid transparent;
+        border-top: 18px solid #2f3f4f;
+        clear: both;
+        color: white;
+    }
+    .play_pac2 {
+        width: 40%;
+        height: 8vw;
+        flex-grow: 1.0;
+        float: left;
+    }
+    .bis_msg_cont {
+        display: inline-block;
+        padding: 1vw;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .bis_msgi_mine {
+        border-radius: 3vw;
+        border: 1px solid #ccc;
+        background: white;
+        padding: 5px 8px;
+        min-width: 5%;
+        max-width: 70%;
+        display: inline-block;
+        position: relative;
+        z-index: 100;
+        float: left;
+        color: black;
+        margin: 1vw;
+        font-size: 3vw;
+    }
+    .bis_msgi_yours {
+        border-radius: 3vw;
+        border: 1px solid #ccc;
+        min-width: 5%;
+        max-width: 60%;
+        display: inline-block;
+        padding: 5px 8px;
+        background: #2f3f4f;
+        position: relative;
+        z-index: 100;
+        color: white;
+        float: right;
+        clear: right;
+        margin: 0.5vw;
+        font-size: 2.1vw;
+    }
+    .bis_msgi_yours::before {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 0px;
+        right: -10px;
+        border: 15px solid transparent;
+        border-top: 18px solid #ccc;
+    }
+    .bis_msgi_mine::before {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 0px;
+        left: -10px;
+        border: 15px solid transparent;
+        border-top: 18px solid #ccc;
+    }
+    .bis_msgi_yours::after {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 1px;
+        right: -9px;
+        border: 15px solid transparent;
+        border-top: 18px solid #2f3f4f;
+        clear: both;
+        color: white;
+    }
+    .bis_msgi_mine::after {
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 1px;
+        left: -9px;
+        border: 15px solid transparent;
+        border-top: 18px solid white;
+        clear: both;
+        color: white;
+    }
+    .prod_add {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        font-size: 4vw;
+    }
+
+}
